@@ -7,6 +7,7 @@
   <meta name="theme-color" content="#6777ef">
   <link rel="apple-touch-icon" href="{{ asset('logo.png') }}">
   <link rel="manifest" href="{{ asset('/manifest.json') }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -22,6 +23,9 @@
 </head>
 <body>
   @yield('content')
+  @if(Request::routeIs('print-photo'))
+    <script src="{{ asset('js/script-limit.js') }}"></script>
+  @endif
   <script src="{{ asset('/sw.js') }}"></script>
   <script>
     if(!navigator.serviceWorker.controller) {

@@ -19,7 +19,11 @@
         <input type="text" name="code" id="form-input">
       </div>
     </div>
-</section>
+    <div class="simple-keyboard"></div>
+    <button type="submit" hidden>Enter</button>
+  </section>
 </form>
+<script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js"></script>
+<script src="{{ asset('js/keyboard.js') }}"></script>
 <script src="{{ asset('/js/script.js') }}"></script>
 @endsection

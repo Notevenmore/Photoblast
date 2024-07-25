@@ -3,14 +3,14 @@
 <section class="content">
   @include('layouts.nav')
   <div class="chooseTitle">
-    <h1>CHOOSE</h1>
-    <h1>CHOOSE</h1>
-    <h1>CHOOSE</h1>
-    <h1>CHOOSE</h1>
+    <h1>SELECT</h1>
+    <h1>SELECT</h1>
+    <h1>SELECT</h1>
+    <h1>SELECT</h1>
   </div>
   <div class="tagline">
     <span style="color: #cfd4da">YOUR </span>
-    <span style="font-weight: bolder; color: white;">PHOTO</span>
+    <span style="font-weight: bolder; color: white;">@if(Request::routeIs('print-photo')) 3 @endif PHOTO @if(Request::routeIs('list-photo')) FOR RETAKE @endif</span>
   </div>
   <section id="list-photo">
     <form action="@if(Request::routeIs('list-photo')) {{ route('retake-photo') }} @elseif(Request::routeIs('print-photo')) {{ route('print') }} @endif" method="post">
@@ -19,7 +19,7 @@
         <div class="photo-group">
           @foreach($photoschunk as $photo)
             <div class="photo-item">
-              <input type="checkbox" name="photos[]" id="{{ $photo }}" value="{{ $photo }}">
+              <input type="checkbox" name="photos[]" class="checkbox-limit" id="{{ $photo }}" value="{{ $photo }}">
               <label for="{{ $photo }}"><img src="{{ asset(str_replace('public', 'storage', $photo)) }}" alt=""></label>
             </div>
           @endforeach

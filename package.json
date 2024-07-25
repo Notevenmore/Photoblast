@@ -11,6 +11,7 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
-        "nodemailer": "^6.9.13"
+        "nodemailer": "^6.9.13",
+        "simple-keyboard": "^3.7.96"
     }
 }
