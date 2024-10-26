@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+section#Generate-code {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: ". dashboard tokenform .";
+    grid-template-columns: 0.5fr 3fr 1fr 0.5fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #212529;
+}
+
+section#Generate-code .dashboard {
+    height: 95vh;
+    background-color: white;
+    border-radius: 40px;
+    border: 9px solid #adb5bd;
+    display: grid;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    grid-template-areas:
+        "title title"
+        "rinciandana grafik1"
+        "rinciandana grafik2"
+        "listcode listcode";
+    gap: 40px;
+    grid-area: dashboard;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section#Generate-code .dashboard::-webkit-scrollbar {
+    display: none;
+}
+
+section#Generate-code .dashboard h1.title {
+    height: 80px;
+    color: white;
+    background-color: #343a40;
+    display: flex;
+    align-items: center;
+    padding-left: 64px;
+    grid-area: title;
+}
+
+section#Generate-code .dashboard .rincian-dana {
+    width: 35vh;
+    height: 45vh;
+    border-radius: 40px;
+    background-color: #6c757d;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    grid-area: rinciandana;
+    align-self: center;
+    justify-self: end;
+}
+
+section#Generate-code .dashboard .rincian-dana .title h1 {
+    background-color: #6c757d;
+    color: white;
+    margin-left: 20px;
+    text-decoration: underline;
+    font-size: 32px;
+}
+
+section#Generate-code .dashboard .rincian-dana .rincian {
+    background-color: #6c757d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+section#Generate-code .dashboard .rincian-dana .rincian p {
+    width: 140px;
+    height: 60px;
+    color: black;
+    align-self: center;
+    background-color: #d9d9d9;
+    font-weight: 800;
+    font-size: 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#Generate-code .dashboard .grafik-1 {
+    background-color: #6c757d;
+    width: 50vh;
+    height: 35vh;
+    border-radius: 40px;
+    grid-area: grafik1;
+    align-self: center;
+    justify-self: start;
+}
+
+section#Generate-code .dashboard .grafik-2 {
+    background-color: #6c757d;
+    width: 50vh;
+    height: 35vh;
+    border-radius: 40px;
+    grid-area: grafik2;
+    align-self: center;
+    justify-self: start;
+}
+
+section#Generate-code .dashboard .list-code {
+    height: 10.6rem;
+    grid-area: listcode;
+    justify-self: center;
+    align-self: center;
+}
+
+section#Generate-code .dashboard .list-code table {
+    border-collapse: collapse;
+}
+
+section#Generate-code .dashboard .list-code table thead,
+section#Generate-code .dashboard .list-code table tbody,
+section#Generate-code .dashboard .list-code table th:first-child {
+    border: 1px solid black;
+    border-top: 3px solid black;
+}
+
+section#Generate-code .dashboard .list-code table th:last-child,
+section#Generate-code .dashboard .list-code table tbody:last-child {
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+section#Generate-code .dashboard .list-code table td:first-child,
+section#Generate-code .dashboard .list-code table th:first-child {
+    border-right: 1px solid black;
+    border-left: 3px solid black;
+}
+
+table {
+    text-align: center;
+}
+
+tr,
+td,
+th {
+    padding: 10px;
+}
+
+section#Generate-code .dashboard .list-code .title-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 500px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+section#Generate-code .token-form {
+    width: 50vh;
+    height: 70vh;
+    border-radius: 40px;
+    border: 9px solid #adb5bd;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    grid-area: tokenform;
+    background-color: white;
+    justify-self: center;
+}
+
+section#Generate-code .token-form .title h1 {
+    height: 80px;
+    color: white;
+    background-color: #343a40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#Generate-code .token-form .form-token form,
+section#Generate-code .token-form .form-token form .token {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+section#Generate-code .token-form .form-token form .token {
+    margin-top: 0px !important;
+}
+
+section#Generate-code .token-form .form-token form label,
+section#Generate-code .token-form .form-token form .token h1 {
+    width: 80px;
+    height: 30px;
+    border-radius: 40px 40px 0 0;
+    color: white;
+    background-color: #343a40;
+    font-weight: 800;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#Generate-code .token-form .form-token form input,
+section#Generate-code .token-form .form-token form .token p {
+    width: 300px;
+    height: 35px;
+    background-color: #adb5bd;
+    color: black;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 800;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    box-shadow: 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+section#Generate-code .token-form .form-token form button {
+    width: 130px;
+    height: 40px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9ecef;
+    border: 2px solid black;
+    margin-top: 10px;
+}
