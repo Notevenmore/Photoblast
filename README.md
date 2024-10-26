@@ -1,5 +1,5 @@
 # Photoblast
-**Photoblast** adalah proyek yang bertujuan untuk meningkatkan pengalaman pengguna dalam sesi photobooth. Dalam repository ini, saya mengembangkan beberapa fitur interaktif yang dibangun menggunakan **Laravel** dan **JavaScript**. Berikut adalah fitur-fitur utama dari website Photoblast:
+**Photoblast** adalah proyek yang bertujuan untuk meningkatkan pengalaman pengguna dalam sesi photobooth. Pada aplikasi ini, terdapat beberapa fitur interaktif yang dibangun menggunakan **Laravel** dan **JavaScript**. Berikut adalah fitur-fitur utama dari website Photoblast:
 
 ## Fitur-Fitur
 ### 1. Fitur Kamera Langsung
