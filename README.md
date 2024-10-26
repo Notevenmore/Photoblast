@@ -21,3 +21,7 @@ Setelah foto selesai diambil dan diproses, sistem secara otomatis mengirimkan ha
 
 ## Tujuan Proyek
 Proyek ini fokus pada kemudahan penggunaan dan personalisasi layanan, memberikan pengalaman unik yang interaktif bagi pelanggan, serta meningkatkan kepuasan mereka dengan layanan fotografi yang efisien di Luvium Cafe.
+
+## Teknologi yang Digunakan
+- **Frontend**: Laravel Blade, Javascript Interface API
+- **Backend**: Laravel
